@@ -1,0 +1,200 @@
+@font-face
+  font-family: 'Museo Sans 100 Thin'
+  src: url('../../fonts/MuseoSansCyrl-100.eot')
+  src: url('../../fonts/MuseoSansCyrl-100.eot?#iefix') format("embedded-opentype"), url('../../fonts/MuseoSansCyrl-100.woff') format("woff"), url('../../fonts/MuseoSansCyrl-100.ttf') format("truetype")
+  font-weight: normal
+  font-style: normal
+
+body
+  margin: 0
+  padding: 0
+  font-family: "Museo Sans 100 Thin" !important
+
+a
+  color: white !important
+
+h1
+  font-weight: 100
+  text-align: left
+  color: #123
+
+a:hover
+  text-decoration: none
+  font-weight: bold
+
+.text_ellipsis
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+
+#contacts
+  position: relative
+
+.navbar_groups
+  position: -webkit-sticky
+  position: sticky
+  top: 0
+  background-color: #419068
+  border-radius: 2px
+  margin: 2px
+  z-index: 1
+
+.avatar
+  vertical-align: middle
+  width: 50px
+  height: 50px
+  border-radius: 50%
+  border: 1px dotted #419068
+
+.select_contact
+  border: 1px solid #123
+  border-radius: 8px
+  height: max-content
+  overflow: hidden
+  background: linear-gradient(60deg, #202940, #419068)
+  color: white
+
+  /*text-align: center;
+  max-width: 500px !important
+
+.ava
+  text-align: center
+  margin-bottom: 10px
+
+.name_group
+  border: 1px solid #123
+  width: max-content
+  margin: 5px auto
+  padding: 5px 10px
+  border-radius: 4px
+  background-color: #419068
+  color: wheat
+
+.panel_contacts button, .direction
+  margin: 0 2px
+  border-radius: 4px !important
+
+.modal_background
+  background-color: rgba(0, 0, 0, 0.8)
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  overflow: auto
+  z-index: 10
+
+.fa-times
+  text-align: center
+  border: 1px solid burlywood
+  width: 30px
+  height: 30px
+  padding: 5px
+  border-radius: 30px
+  position: absolute
+  transition: transform 0.4s ease-in-out
+
+  /*left: 50%;
+  top: 10px
+  background: white
+  color: #123
+
+  &:hover
+    -webkit-transform: rotate(360deg)
+    transform: rotate(360deg)
+    cursor: pointer
+    color: red
+
+.modal_body
+  max-width: max-content
+  top: 50px
+  margin: 1.25rem auto
+  padding: 10px
+
+.direction
+  padding: 5px 10px
+  background-color: #419068
+  color: white
+  border-radius: 8px
+  cursor: pointer
+  transition: all .5s
+
+  &:hover
+    background-color: #202940
+
+.fa-pencil-square
+  margin: 0 5px
+  font-size: 24px
+  color: #419068
+
+.select_contact .avatar
+  width: 100px
+  height: 100px
+
+.one_contact
+  border-bottom: 1px dotted #123123
+  padding: 2px
+  cursor: pointer
+
+  &:hover
+    background-color: aquamarine
+
+.company, .address
+  border-top: 1px dotted white
+
+.company h3, .address h3
+  margin: 0 auto
+  font-size: 16px
+  border: 1px dotted white
+  width: max-content
+  border-top: none
+  padding: 5px 15px
+  background-color: #123
+  margin-bottom: 10px
+  border-bottom-left-radius: 4px
+  border-bottom-right-radius: 4px
+
+.save_form
+  text-align: center !important
+  margin: 0 auto
+  color: #123 !important
+  background-color: white !important
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1)
+  border-radius: 4px
+
+.fa-star, .fa-star-o
+  font-size: 18px
+  margin-left: 5px
+  margin-right: 5px
+  color: #FF1461
+
+.fa-star:hover, .fa-star-o:hover
+  font-size: 20px
+  margin-left: 4px
+  margin-right: 4px
+
+.number_contact
+  position: absolute
+  margin-left: -15px
+  margin-top: -10px
+  font-size: 12px
+  font-weight: bold
+
+.fa-trash
+  padding: 5px
+  width: 30px !important
+  text-align: center
+  border-radius: 4px
+  color: #FF1461
+  border: 1px dotted #FF1461
+  transition: all .5s
+
+  &:hover
+    background: #419068
+    color: white
+
+@media (max-width: 500px)
+  .save_form
+    position: fixed
+    bottom: 10%
+    right: 10%
