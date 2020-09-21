@@ -33,7 +33,7 @@ export const OneContact = ({contact:props_contact}) => {
         <Fragment>
             <div className='one_contact '  >
                 <div className="row align-items-center">
-                    <div className="col-3 m-0 p-0 row align-items-center" >
+                    <div className="col-sm-auto col-3 m-0 p-0 row align-items-center" >
                         <div className="order-2 order-sm-1">
                             <span><i onClick={()=> toggleFavorite()} className={`fa fa-star${contact.favorite ? '' : '-o'}`} aria-hidden="true"></i></span>
                             <i className="fa fa-2 fa-pencil-square" onClick={() => setSelectContact(contact)} aria-hidden="true"></i>
@@ -45,7 +45,7 @@ export const OneContact = ({contact:props_contact}) => {
                              onError={(e) => {e.target.onerror = null;  e.target.src="avatar.jpg"}}
                              alt="Avatar" />
                     </div>
-                    <div className="col-9 row align-items-center" onClick={() => setSelectContact(contact)}>
+                    <div className="col-9 m-0 p-0  row align-items-center justify-content-start" onClick={() => setSelectContact(contact)}>
                         <div className="col-md-4 col-sm-3 col-12">{contact.name}</div>
                         <div className="col-md-5 col-sm-6 col-12 text_ellipsis">{contact.email}</div>
                         <div className="col-md-3 col-sm-6 col-12">{contact.phone}</div>
